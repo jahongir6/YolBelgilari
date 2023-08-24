@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.yo.fragments.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_likeFragment"
+            app:destination="@id/likeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_aboutAppFragment"
+            app:destination="@id/aboutAppFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addLabelFragment"
+            app:destination="@id/addLabelFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_labelInfoFragment"
+            app:destination="@id/labelInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/likeFragment"
+        android:name="com.example.yo.fragments.LikeFragment"
+        android:label="LikeFragment" />
+    <fragment
+        android:id="@+id/aboutAppFragment"
+        android:name="com.example.yo.fragments.AboutAppFragment"
+        android:label="AboutAppFragment" />
+    <fragment
+        android:id="@+id/addLabelFragment"
+        android:name="com.example.yo.fragments.AddLabelFragment"
+        android:label="AddLabelFragment" />
+    <fragment
+        android:id="@+id/labelInfoFragment"
+        android:name="com.example.yo.fragments.LabelInfoFragment"
+        android:label="LabelInfoFragment" />
+</navigation>
